@@ -1,0 +1,46 @@
+# ============================================================
+#  只提交"代码/文档";下面这些一律不要进仓库
+# ============================================================
+
+# ---- 依赖与模型缓存(几百 MB ~ 几 GB,克隆者自己装/下) ----
+pylibs/
+pkgs/
+hf/
+hf2/
+xet/
+
+# ---- 中间产物与成品 ----
+# out/ 里是生成的字幕、ASS 和封装好的 MKV:体积大、且内容与原作音频同源,
+# 有版权与内容分级问题,绝对不要提交。
+audio/
+out/
+tmp/
+preview.mp4
+frame_*.png
+*.wav
+*.mp3
+*.m4a
+*.flac
+*.opus
+*.mkv
+*.mp4
+*.bin
+*.incomplete
+*.zh.cache.json
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# ---- 机器/个人特定配置 ----
+config.local.*
+*.local.ps1
+*.local.json
+
+# ---- 编辑器/系统 ----
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini
